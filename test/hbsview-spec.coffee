@@ -20,5 +20,24 @@ describe 'HBSView', ->
             expect(html).toBe('<h1>Model Title</h1>')
 
 
+    describe 'when initialize with precompiled template', ->
+
+        beforeEach ->
+            view = new Spine.HBSView('template.hbs', precompiled: true)
+        
+        it 'can create instance', ->
+            expect(view).not.toBeNull()
+
+        it 'can render HTML with template arguments', ->
+            html = view.renderWith({ title : 'Title' })
+            expect(html).toBe('<h1>Title</h1>')
+
+        it 'can render HTML with model attributes', ->
+            model = new ExModel({ title : 'Model Title'})
+            view.model = model
+            html = view.render()
+            expect(html).toBe('<h1>Model Title</h1>')
+
+
 class ExModel extends Spine.Model
     @configure 'ExModel', 'title'

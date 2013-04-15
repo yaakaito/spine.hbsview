@@ -10,7 +10,8 @@
         "components/spine/lib/spine.js",
         "components/handlebars/handlebars.js",
         "components/jasmine-fixture/dist/jasmine-fixture.js",
-        "compiled/**/*.js"
+        "compiled/**/*.js",
+        "tpl/precompiled.js"
     ],
     "after_tests" : "rm -rf compiled"
 }
