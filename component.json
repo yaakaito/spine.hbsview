@@ -8,6 +8,8 @@
   ],
   "dependencies" : {
     "spine" : "*",
-    "handlebars" : "*"
+    "handlebars" : "*",
+    "jquery" : "~1.9",
+    "jasmine-fixture" : "git://github.com/searls/jasmine-fixture.git"
   }
 }
