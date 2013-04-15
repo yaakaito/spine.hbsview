@@ -21,10 +21,6 @@
     "level" : "error"
   },
  
-  "no_implicit_braces" : {
-    "level" : "error"
-  },
-
   "no_implicit_parens" : {
     "level" : "error"
   },
