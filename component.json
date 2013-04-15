@@ -6,7 +6,8 @@
     "node_modules",
     "components"
   ],
-  "dependencies" :{
+  "dependencies" : {
+    "spine" : "*",
     "handlebars" : "*"
   }
 }
