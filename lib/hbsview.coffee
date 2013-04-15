@@ -9,8 +9,10 @@ class HBSView extends Spine.Module
 
         @template = template
 
-    render: (context) ->
-        return @template(context)
+    render: ->
+        return @renderWith(@model)
 
+    renderWith: (context) ->
+        return @template(context)
 
 Spine.HBSView = HBSView
