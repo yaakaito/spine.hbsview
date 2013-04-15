@@ -1,0 +1,16 @@
+{
+    "framework" : "jasmine",
+    "before_tests" : "coffee -c -o ./compiled lib/*.coffee test/*.coffee",
+    "src_files" : [
+        "lib/**/*.coffee",
+        "test/**/*.coffee"
+    ],
+    "serve_files" : [
+        "components/jquery/jquery.js",
+        "components/spine/lib/spine.js",
+        "components/handlebars/handlebars.js",
+        "components/jasmine-fixture/dist/jasmine-fixture.js",
+        "compiled/**/*.js"
+    ],
+    "after_tests" : "rm -rf compiled"
+}

@@ -1,5 +1,5 @@
-class HBSView extends Module
-    @include(Events)
+class HBSView extends Spine.Module
+    @include(Spine.Events)
 
     construcor: (template, options) ->
         compiled = options.precompiled or false
@@ -7,4 +7,10 @@ class HBSView extends Module
             template = Handlebars.compile(template)
             compiled = true
 
-    
+        @template = template
+
+    render: (context) ->
+        return @template(context)
+
+
+Spine.HBSView = HBSView
