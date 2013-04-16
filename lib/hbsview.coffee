@@ -17,4 +17,5 @@ class HBSView extends Spine.Module
     renderWith: (context) ->
         return @template(context)
 
+
 Spine.HBSView = HBSView
