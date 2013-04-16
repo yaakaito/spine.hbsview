@@ -9,7 +9,6 @@
   "dependencies" : {
     "spine" : "*",
     "handlebars" : "*",
-    "jquery" : "~1.9",
-    "jasmine-fixture" : "git://github.com/searls/jasmine-fixture.git"
+    "jquery" : "~1.9"
   }
 }
