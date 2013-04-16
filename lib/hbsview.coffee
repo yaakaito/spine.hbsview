@@ -1,5 +1,4 @@
 class HBSView extends Spine.Module
-    @include(Spine.Events)
 
     constructor: (template, options) ->
         compiled = options?.precompiled or false
